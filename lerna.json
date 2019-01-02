@@ -5,7 +5,8 @@
   "commond": {
     "publish": {
       "npmClient": "npm",
-      "registry": "https://registry.npmjs.org"
+      "registry": "https://registry.npmjs.org",
+      "access": "public"
     }
   },
   "version": "independent"

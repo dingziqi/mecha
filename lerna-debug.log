@@ -1,0 +1,81 @@
+0 silly argv { _: [ 'publish' ],
+0 silly argv   composed: 'publish',
+0 silly argv   lernaVersion: '3.8.1',
+0 silly argv   '$0': 'node_modules/.bin/lerna' }
+1 notice cli v3.8.1
+2 verbose rootPath /Users/dingziqi/code/nail
+3 info versioning independent
+4 verbose session 648ed74af554c953
+5 verbose user-agent lerna/3.8.1/node@v8.12.0+x64 (darwin)
+6 info Verifying npm credentials
+7 verbose Retrieving npm user profile
+8 http fetch GET 200 https://registry.npmjs.org/-/npm/v1/user 1066ms
+9 silly npm profile get received {"tfa":false,"name":"dingziqi","email":"dingziqi_xtu@sina.com","email_verified":false,"created":"2019-01-02T02:48:01.730Z","updated":"2019-01-02T02:59:28.443Z","cidr_whitelist":null,"fullname":"","twitter":"","github":"dingziqi"}
+10 silly npm whoami received {"username":"dingziqi"}
+11 silly argv { _: [ 'publish' ], composed: 'publish', lernaVersion: '3.8.1' }
+12 verbose rootPath /Users/dingziqi/code/nail
+13 silly isAnythingCommitted
+14 verbose isAnythingCommitted 1
+15 silly currentBranch
+16 verbose currentBranch test
+17 silly remoteBranchExists
+18 silly isBehindUpstream
+19 silly isBehindUpstream test is behind origin/test by 0 commit(s) and ahead by 0
+20 silly hasTags
+21 verbose hasTags true
+22 silly git-describe.sync "v0.0.1-1-gbeaec94" => {"lastTagName":"v0.0.1","lastVersion":"v0.0.1","refCount":"1","sha":"beaec94","isDirty":false}
+23 info Looking for changed packages since v0.0.1
+24 silly diffSinceIn v0.0.1 packages/nail-ui
+25 silly diff packages/nail-ui/package.json
+26 verbose updated @nail/nail-ui
+27 verbose git-describe undefined => "v0.0.1-1-gbeaec94"
+28 silly git-describe parsed => {"lastTagName":"v0.0.1","lastVersion":"v0.0.1","refCount":"1","sha":"beaec94","isDirty":false}
+29 silly batched [ PackageGraphNode {
+29 silly batched     name: '@nail/nail-ui',
+29 silly batched     externalDependencies: Map {},
+29 silly batched     localDependencies: Map {},
+29 silly batched     localDependents: Map {} } ]
+30 silly run-lifecycle No script for "preversion" in "nail", continuing
+31 silly run-lifecycle No script for "preversion" in "@nail/nail-ui", continuing
+32 silly run-lifecycle No script for "version" in "@nail/nail-ui", continuing
+33 silly run-lifecycle No script for "version" in "nail", continuing
+34 silly gitAdd [ '/Users/dingziqi/code/nail/packages/nail-ui/package.json' ]
+35 silly gitCommit Publish
+35 silly gitCommit
+35 silly gitCommit  - @nail/nail-ui@0.0.2
+36 verbose git [ 'commit',
+36 verbose git   '-F',
+36 verbose git   '/private/var/folders/99/7tl_3zvs3_1gqkd93lrdcht80000gn/T/4a7da29d-bde7-476f-b7e8-9806fc3b6e3e/lerna-commit.txt' ]
+37 silly gitTag @nail/nail-ui@0.0.2
+38 verbose git [ 'tag', '@nail/nail-ui@0.0.2', '-m', '@nail/nail-ui@0.0.2' ]
+39 silly run-lifecycle No script for "postversion" in "@nail/nail-ui", continuing
+40 silly run-lifecycle No script for "postversion" in "nail", continuing
+41 info git Pushing tags...
+42 silly gitPush origin test
+43 silly batched [ PackageGraphNode {
+43 silly batched     name: '@nail/nail-ui',
+43 silly batched     externalDependencies: Map {},
+43 silly batched     localDependencies: Map {},
+43 silly batched     localDependents: Map {} } ]
+44 info publish Publishing packages to npm...
+45 silly verifyNpmPackageAccess
+46 http fetch GET 200 https://registry.npmjs.org/-/org/dingziqi/package?format=cli 261ms
+47 warn The logged-in user does not have any previously-published packages, skipping permission checks...
+48 warn ENOLICENSE Packages @nail/nail-ui are missing a license
+49 silly getCurrentSHA
+50 verbose getCurrentSHA 1ff4382906edeba4ad5815338129df9df305fa81
+51 silly run-lifecycle No script for "prepare" in "nail", continuing
+52 silly run-lifecycle No script for "prepublishOnly" in "nail", continuing
+53 silly run-lifecycle No script for "prepack" in "nail", continuing
+54 verbose pack-directory packages/nail-ui
+55 silly run-lifecycle No script for "prepublish" in "@nail/nail-ui", continuing
+56 silly run-lifecycle No script for "prepare" in "@nail/nail-ui", continuing
+57 silly run-lifecycle No script for "prepublishOnly" in "@nail/nail-ui", continuing
+58 silly run-lifecycle No script for "prepack" in "@nail/nail-ui", continuing
+59 silly run-lifecycle No script for "postpack" in "@nail/nail-ui", continuing
+60 silly run-lifecycle No script for "postpack" in "nail", continuing
+61 verbose publish @nail/nail-ui
+62 http fetch PUT 402 https://registry.npmjs.org/@nail%2fnail-ui 370ms
+63 error Error: 402 Payment Required - PUT https://registry.npmjs.org/@nail%2fnail-ui - You must sign up for private packages
+63 error     at res.buffer.catch.then.body (/Users/dingziqi/code/nail/node_modules/npm-registry-fetch/check-response.js:104:15)
+63 error     at <anonymous>
