@@ -1,5 +1,5 @@
 {
-  "name": "@nail/nail-ui",
+  "name": "@mecha/mecha-ui",
   "version": "0.0.5",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "author": "",
   "license": "ISC",
-  "gitHead": "f5b505f86122291fe0bba5974aa0355041ec26c2",
+  "gitHead": "f721613e46e6a16db27a4702457904d88db3be33",
   "publishConfig": {
     "access": "public"
   }
